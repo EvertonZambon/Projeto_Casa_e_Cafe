@@ -20,3 +20,4 @@ Foi feito com NodeJS, Express e Ejs.
     A dependencia scripts permite inicar o projeto com o o comando npm start.
     
 As dependencias já estão todas neste projeto no arquivo package.json.
+Basta serem instaladas para rodar corretamente.
