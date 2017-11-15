@@ -21,3 +21,5 @@ Foi feito com NodeJS, Express e Ejs.
     
 As dependencias já estão todas neste projeto no arquivo package.json.
 Basta serem instaladas para rodar corretamente.
+
+Deixei uma imagem com a raiz do projeto.
