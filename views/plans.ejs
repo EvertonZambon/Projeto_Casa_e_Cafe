@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= titulo %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />      	
+    </head>
+    <body>
+        <a href="/">Home</a><br><br>
+      	<fieldset>
+          <legend>Produtos cadastrados</legend>
+
+          <table border="1" id="registros">
+              <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Description</th>
+              </tr>
+
+              <% for(i = 0; i < produtos.length; i++){ %>
+                  <tr>
+                    <td><%= produtos[i].product %></td>
+                    <td><%= produtos[i].price %></td>
+                    <td><%= produtos[i].description %></td>
+                  </tr>
+              <% } %>
+      	</fieldset>
+    </body>
+</html>

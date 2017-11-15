@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= titulo %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <a href="/">Home</a><br><br>
+
+        <h1 style="text-align: center;">Pagamento efetuado realizando um POST</h1>
+        <h2>Código do produto: <%= produto.codProduct%></h2>
+        <h2>Data de pagamento: <%= produto.payment_date%></h2>
+        <h2>Tipo de pagamento: <%= produto.payment_type%></h2>
+        <h2>Desconto: <%= produto.discount%> %</h2>
+        <h2>Preço do produto: R$ <%= produto.price%></h2>
+    </body>
+</html>

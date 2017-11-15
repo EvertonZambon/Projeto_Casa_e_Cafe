@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= titulo %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+      	<script type="text/javascript" src="/javascripts/validacao.js"></script>
+    </head>
+    <body>
+        <a href="/">Home</a><br><br>
+      	<fieldset>
+            <legend>Produtos cadastrados</legend>
+            <h2 style="text-align: center;">Escolha o produto que deseja comprar</h2>
+            <table align="center" border="1" id="registros">
+                <tr>
+                    <th>-</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Escolha</th>
+                </tr>
+
+                <% for(i = 0; i < produtos.length; i++){ %>
+                    <tr>
+                      <td id="<%= produtos[i].cod %>" style="visibility: hidden;"></td>
+                      <td><%= produtos[i].product %></td>
+                      <td><%= produtos[i].price %></td>
+                      <td><%= produtos[i].description %></td>
+                      <td><input type="radio" name="prodEscolhido" onclick="preencherCampos(this);" ></td>
+                    </tr>
+                <% } %>
+            </table>
+      	</fieldset>
+        <br>
+        <fieldset>
+            <legend>Criar pagamento</legend>
+            <form action="/payment" method="POST">
+                <div>
+                    <label for="cod">Código do produto: </label>
+                    <input type="text" name="cod" id="cod" value="" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="dataPag">Data do Pagamento:  </label>
+                    <!--<input type="date" name="dataPag" id="dataPag"/> -->
+                    <input type="text" name="dataPag" id="dataPag" required />
+                </div>
+                <br>
+                <div>
+                    <label for="tipoPag">Tipo do Pagamento:  </label>
+                    <!--<input type="text" name="tipoPag" id="tipoPag" /> -->
+                    <input type="radio" name="tipoPag" value="Cartão" />Cartão
+                    <input type="radio" name="tipoPag" value="Dinheiro" />Dinheiro
+                    <input type="radio" name="tipoPag" value="Cheque" />Cheque
+                </div>
+                <br>
+                <div>
+                    <label for="produto">Produto:  </label>
+                    <input type="text" name="produto" id="produto" />
+                </div>
+                <br>
+                <div>
+                    <label for="precoProduto">Preço R$:  </label>
+                    <input type="text" name="precoProduto" id="precoProduto" />
+                </div>
+                <br>
+                <div>
+                    <label for="desconto">Desconto %:  </label>
+                    <input type="text" name="desconto" id="desconto" />
+                    <input type="button" name="btnDesconto" id="btnDesconto" value="Confirmar" />
+                    <input type="button" name="desfazer" id="desfazer" value="Apagar" />
+                </div>
+                <br>
+                <div>
+                    <label for="precoDesconto">Preco com desconto R$:  </label>
+                    <input type="text" name="precoDesconto" id="precoDesconto" />
+                </div>
+                <hr>
+                <div>
+                    <input type="submit" id="btnCadastrar" value="Cadastrar" />
+                </div>
+            </form>
+        </fieldset>
+
+    </body>
+</html>
