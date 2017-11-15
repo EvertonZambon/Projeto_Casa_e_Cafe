@@ -1,0 +1,29 @@
+CREATE DATABASE produtosNode;
+
+USE produtosNode;
+
+CREATE TABLE Produtos(
+    cod         INT AUTO_INCREMENT,
+    product     VARCHAR (50),
+    price       FLOAT(5,2),
+    description VARCHAR (50),    
+    PRIMARY KEY (cod) 
+);
+
+CREATE TABLE Pagamentos(
+    transaction_id INT AUTO_INCREMENT,
+    codProduct     INT,
+    payment_date   VARCHAR(50),
+    payment_type   VARCHAR(50),
+    discount       INT,
+    price          FLOAT(5,2),	
+    PRIMARY KEY (transaction_id), 
+    FOREIGN KEY (codProduct) REFERENCES Produtos(cod)
+);
+
+INSERT INTO Produtos(product, price, description) VALUES('gold_plan', 59.90, 'plano pago gold');
+INSERT INTO Produtos(product, price, description) VALUES('platinum_plan', 79.90, 'premium_platinum');
+INSERT INTO Produtos(product, price, description) VALUES('super_premium_plan', 129.90, 'o melhor plano de todos');
+
+select * from produtos;
+select * from pagamentos;
