@@ -1,29 +1,29 @@
 # Projeto_Casa_e_Cafe
 
-Instruções para rodar o projeto.
+1ª Fase:
+    Instruções para rodar o projeto.
 
-Foi feito com NodeJS, Express e Ejs.
+    Foi feito com NodeJS, Express e Ejs.
 
-1°: Instalar o NodeJS
+    1°: Instalar o NodeJS
 
-2°: Instalar o Express
-    npm install express --save
+    2°: Instalar o Express
+        npm install express --save
 
-3° Instalar o Ejs
-   npm install ejs --save
+    3° Instalar o Ejs
+       npm install ejs --save
 
-4°: acessar na pasta do projeto, o caminho do arquivo app.js.
+    4°: acessar na pasta do projeto, o caminho do arquivo app.js.
 
-5°: executar o npm init. 
+    5°: executar o npm init. 
 
-5°: Instalar os as dependencias do projeto.
-    A dependencia scripts permite inicar o projeto com o o comando npm start.
-    
-As dependencias já estão todas neste projeto no arquivo package.json.
-Basta serem instaladas para rodar corretamente.
+    5°: Instalar os as dependencias do projeto.
+        A dependencia scripts permite inicar o projeto com o o comando npm start.
 
-Deixei uma imagem com a raiz do projeto.
+    As dependencias já estão todas neste projeto no arquivo package.json.
+    Basta serem instaladas para rodar corretamente.    
 
 
 2ª Fase:
-Foi utilizado no frontend o framework css Materialize.
+    Foi utilizado no frontend o framework css Materialize.
+    Deixei uma imagem com a raiz do projeto.
