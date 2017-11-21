@@ -23,3 +23,7 @@ As dependencias já estão todas neste projeto no arquivo package.json.
 Basta serem instaladas para rodar corretamente.
 
 Deixei uma imagem com a raiz do projeto.
+
+
+2ª Fase:
+Foi utilizado no frontend o framework css Materialize.
