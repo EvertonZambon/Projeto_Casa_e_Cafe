@@ -24,6 +24,6 @@
     Basta serem instaladas para rodar corretamente.    
 
 
-2ª Fase:
+2ª Fase:    
     Foi utilizado no frontend o framework css Materialize.
     Deixei uma imagem com a raiz do projeto.
