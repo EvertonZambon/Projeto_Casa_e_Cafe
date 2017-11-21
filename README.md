@@ -26,3 +26,4 @@
 2ª Fase:   
     Foi utilizado no frontend o framework css Materialize.
     Deixei uma imagem com a raiz do projeto.
+    Para forçar o erro e exibir a página de erro que contém o status 404, basta introduzir uma string errada no comando sql da linha 16 do     arquivo model/pagamentoModel.js 
