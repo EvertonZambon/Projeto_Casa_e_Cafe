@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= titulo %></title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+   	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='/stylesheets/estilo.css' />
+    </head>
+    <body class="grey lighten-3">
+        <% include header %> <!-- insere o ejs do cabeçalho  -->
+        <section>
+            <div class="container">
+                <fieldset id="fieldsetHomePage" class="grey lighten-1">
+                    <h3 id="textoHomePage">HomePage Materialize</h3>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <form action="/plans" method="GET">
+                                <p>
+                                    <h5>Rota /plans. Vai ao banco e retorna os produtos.</h5>
+                                </p>
+                                <button class="btn waves-effect waves-light" style="background-color: black;" type="submit">Carregar produtos
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <form action="/prepayment" method="GET">
+                                <p>
+                                    <h5>Rota /prepayment. Cria-se a tela de pagamento e leva até a rota /payment.</h5>
+                                </p>
+                                <button class="btn waves-effect waves-light" style="background-color: black;" type="submit">Criar Pagamento
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <% include footer %> <!-- insere o ejs do rodapé  -->
+
+        <link rel='stylesheet' href='/stylesheets/materialize-min.css' />
+        <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
+        <script type="text/javascript" src="/javascripts/materialize-min.js"></script>
+        <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--ícones materialize-->
+    </body>
+</html>

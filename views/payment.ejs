@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= titulo %></title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+   	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='/stylesheets/estilo.css' />
+    </head>
+    <body class="grey lighten-3">
+        <% include header %> <!-- insere o ejs do cabeçalho  -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <legend class="center grey lighten-1" id="legendaPagamentoConcluido">Pagamento Realizado via POST</legend>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <table class="responsive-table centered bordered highlight grey lighten-1" id="tabelaPagamentoConcluido">
+                            <thead>
+                                <tr>
+                                    <th>Transaction ID</th>
+                                    <th>Product</th>
+                                    <th>Payment Date</th>
+                                    <th>Payment Type</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><%= transID %></td>
+                                    <td><%= nomeProd %></td>
+                                    <td><%= produto.payment_date %></td>
+                                    <td><%= produto.payment_type %></td>
+                                    <td>$ <%= produto.price %></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <% include footer %> <!-- insere o ejs do rodapé  -->
+
+        <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
+        <script type="text/javascript" src="/javascripts/materialize-min.js"></script>
+        <link rel='stylesheet' href='/stylesheets/materialize-min.css' />
+        <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--ícones materialize-->
+    </body>
+</html>

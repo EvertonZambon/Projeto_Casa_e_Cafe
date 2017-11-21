@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title><%= titulo %></title>
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel='stylesheet' href='/stylesheets/materialize-min.css' />
+      <link rel='stylesheet' href='/stylesheets/estilo.css' />
+    </head>
+    <body class="grey lighten-3">
+        <% include header %>    <!-- insere o ejs do cabeçalho  -->        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h5 id="textEscolhaProduto" class="center-align grey lighten-1">Escolha o produto que deseja comprar</h5>
+
+                        <table id="tabelaProdutoAVenda" class="responsive-table centered bordered highlight grey lighten-1">
+                            <thead>
+                                <tr>
+                                    <th><i class="material-icons prefix">attach_money</i></th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Description</th>
+                                    <th>Escolha</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <% for(i = 0; i < produtos.length; i++){ %>
+                                    <tr>  <!-- style="visibility: hidden;" -->
+                                      <td id="<%= produtos[i].cod %>"><i class="material-icons prefix">local_grocery_store</i></td>
+                                      <td><%= produtos[i].product %></td>
+                                      <td><%= produtos[i].price %></td>
+                                      <td><%= produtos[i].description %></td>
+                                      <td><input type="radio" class="radiosTabela" name="prodEscolhido" onclick="preencherCampos(this);" ></td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>    <!-- fim col -->
+                </div>      <!-- fim row -->
+
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <form action="/payment" method="POST" id="formPagamento" class="grey lighten-1">
+                            <div>
+                                <i class="material-icons prefix marginIcones">vpn_key</i>
+                                <label for="cod" class="black-text">Código do produto</label>
+                                <input type="text" class="black-text marginInputs" name="cod" id="cod" value="" required/>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="material-icons prefix marginIcones">date_range</i>
+                                <label for="dataPag" class="black-text">Data do Pagamento</label>
+                                <input type="text" class="black-text marginInputs" name="dataPag" id="dataPag" required />
+                            </div>
+                            <br>
+                            <div>
+                                <i id="iconeRadio" class="material-icons prefix marginIcones">radio_button_checked</i>
+                                <label for="tipoPag" class="black-text">Tipo do Pagamento</label><br>
+                                <span class="spanTipo">Cartão</span> <input type="radio" id="cartao" class="radiosPagamento" name="tipoPag" value="Cartão" /> <br>
+                                <span class="spanTipo">Dinheiro</span> <input type="radio" id="dinheiro" class="radiosPagamento" name="tipoPag" value="Dinheiro" /> <br>
+                                <span class="spanTipo">Cheque</span> <input type="radio" id="cheque" class="radiosPagamento" name="tipoPag" value="Cheque" />
+                            </div>
+                            <br>
+                            <div>
+                                <i class="material-icons prefix marginIcones">local_grocery_store</i>
+                                <label for="produto" class="black-text">Produto</label>
+                                <input type="text" class="black-text marginInputs" name="produto" id="produto" />
+                            </div>
+                            <br>
+                            <div>
+                                <i class="material-icons prefix marginIcones">attach_money</i>
+                                <label for="precoProduto" class="black-text">Preço R$</label>
+                                <input type="text" class="black-text marginInputs" name="precoProduto" id="precoProduto" />
+                            </div>
+                            <br>
+                            <div>
+                                <i class="material-icons prefix marginIcones">exposure_plus_1</i>
+                                <label for="desconto" class="black-text">Desconto %</label>
+                                <input type="text" class="black-text marginInputs" name="desconto" id="desconto" />
+                                <a class="waves-effect waves-light btn corBotoes hoverBotoes" id="btnDesconto">Ok
+                                    <i class="material-icons right">check_circle</i>
+                                </a>
+                                <a class="waves-effect waves-light btn corBotoes hoverBotoes" id="desfazer">Apagar
+                                    <i class="material-icons right">delete_forever</i>
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="material-icons prefix marginIcones">attach_money</i>
+                                <label for="precoDesconto" class="black-text">Preço com desconto R$</label>
+                                <input type="text" class="black-text marginInputs" name="precoDesconto" id="precoDesconto" />
+                            </div>
+                            <hr>
+                            <div>
+                                <button class="btn waves-effect waves-light corBotoes hoverBotoes marginIcones" type="submit" id="btnCadastrar">Cadastrar
+                                    <i class="material-icons right">arrow_forward</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>      <!-- fim col -->
+                </div>        <!-- fim row -->
+            </div>
+        </section>
+        <% include footer %>   <!-- insere o ejs do rodapé  -->
+
+        <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
+        <script type="text/javascript" src="/javascripts/materialize-min.js"></script>
+        <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--ícones materialize-->
+        <script type="text/javascript" src="/javascripts/validacao.js"></script>
+    </body>
+</html>
