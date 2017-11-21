@@ -1,0 +1,499 @@
+.imgMiniPerfil{
+    width: 37px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+      /*perfilMobile ícone*/
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons{
+    color: #26a69a !important;
+}
+
+.textoPerfilMobile{
+    color: #26a69a !important;
+}
+
+#button-collapse{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.header{
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.marginLinksHeader{
+    margin-left: 5px;
+}
+
+/*Página homePage.ejs*/
+#casaecafe{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#textoHomePage{
+    font-weight: bold;
+}
+
+#fieldsetHomePage{
+    border-radius: 20px;
+}
+
+#btnCriarPagamento{
+    margin-bottom: 30px;
+}
+
+/*Página plans.ejs*/
+#legendaProdutosCadastrados{
+    font-weight: bold;
+    margin-top: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+#tabelaProdutosCadastrados{
+    border-radius: 20px;
+}
+
+/*Página prepayment.ejs*/
+#textEscolhaProduto{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 45px;
+}
+
+#tabelaProdutoAVenda{
+    border-radius: 20px;
+}
+
+#formPagamento{
+    border-radius: 20px;
+}
+
+.radiosTabela{
+    opacity: 100 !important;
+    pointer-events: auto !important;
+}
+
+.marginIcones{
+    margin-left: 24px;
+    /* background-color: red; */
+}
+
+.marginInputs{
+    margin-left: 30px !important;
+    width: 38% !important;
+    /*background-color: blue !important; */
+}
+
+#cod{
+    margin-top: 5px;
+    width: 30% !important;
+    /*background-color: green !important; */
+}
+
+#dataPag{
+    width: 30% !important;
+    /* background-color: green !important; */
+}
+
+
+/*Labels do Formulário */
+.prefix ~ label{
+  font-weight: bold;
+  margin-left: 1rem;
+  font-size: .9rem;
+  /* background-color: pink; */
+}
+
+  /* radio button tipo de pagamento*/
+.radiosPagamento{
+    opacity: 100 !important;
+    pointer-events: auto !important;
+    margin-top: 7px !important;
+}
+
+#iconeRadio{
+    margin-bottom: 12px;
+}
+        /* tipo de pagamento */
+.spanTipo{
+    margin-left: 30px !important;
+    font-weight: bold;
+}
+            /*radio btn*/
+#cartao{
+  margin-left: 19px !important;
+}
+#dinheiro{
+  margin-left: 5px;
+  margin-top: 9px !important;
+}
+#cheque{
+  margin-left: 15px;
+  margin-top: 9px !important;
+}
+
+.corBotoes{
+    background-color: black;
+}
+
+#btnDesconto{
+    margin-left: 24px;
+}
+
+#btnCadastrar{
+    margin-bottom: 5px;
+}
+.hoverBotoes:hover{
+    background-color: black;
+}
+
+
+/*Página payment.ejs*/
+#legendaPagamentoConcluido{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#tabelaPagamentoConcluido{
+    border-radius: 20px;
+}
+
+#legendaPagamentoConcluido{
+    margin-top: 45px;
+}
+
+/*Página error.ejs*/
+#h3_ErroPagamento{
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#fieldsetErroPagamento{
+    margin-bottom: 226px !important;
+    border-radius: 20px;
+}
+
+#spanErroPagamento{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*media queries*/
+
+/*iphone 5*/
+@media screen and (max-height: 600px){
+  .header{
+      font-size: 18px;
+  }
+    #fieldsetHomePage{
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    #legendaProdutosCadastrados{
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    #tabelaProdutosCadastrados{
+        /* background-color: orange !important;  */
+        margin-bottom: 30px;
+    }
+
+    #tabelaProdutoAVenda{
+        padding-bottom: 5px;
+    }
+
+    #cod{
+        width: 20px !important;
+    }
+
+    #dinheiro{
+      margin-left: 9px;
+    }
+    #cheque{
+      margin-left: 17px;
+    }
+
+    #h3_ErroPagamento{
+        margin-top: 45px !important;
+    }
+
+    #spanErroPagamento{
+        font-size: 18px !important;
+    }
+
+    #fieldsetErroPagamento{
+        margin-bottom: 50px !important;
+    }
+}
+      /* tablets*/
+@media screen and (min-width: 768px) {
+    .footerAutoria{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #fieldsetHomePage{
+        /* background-color: pink !important; */
+        margin-top: 80px;
+        /*margin-bottom: 107px;   */
+        margin-bottom: 390px;
+    }
+
+    #linkHome{
+        margin-left: 50px !important;
+    }
+
+    #legendaProdutosCadastrados{
+        font-size: 30px;
+        margin-top: 41px;
+    }
+
+    #tabelaProdutosCadastrados{
+        /*background-color: blue !important; */
+        margin-top: 15px;
+        margin-bottom: 335px;
+    }
+
+    #tabelaProdutosCadastrados th{
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #tabelaProdutosCadastrados td{
+        font-size: 24px;
+    }
+
+    #textEscolhaProduto{
+        font-size: 24px;
+    }
+
+    #formPagamento{
+        margin-bottom: 15px;
+    }
+
+    #tabelaProdutoAVenda{
+        padding-bottom: 5px;
+    }
+
+    .prefix ~ label{
+        /*background-color: pink !important;  */
+        font-size: 1.4rem;
+    }
+
+    .spanTipo{
+        /*background-color: pink !important; */
+        font-size: 20px;
+    }
+
+    #desconto{
+        width: 65% !important;
+        /*background-color: green !important; */
+    }
+
+    #btnConfirmar{
+        margin-left: 24px !important;
+    }
+
+    #tabelaPagamentoConcluido{
+        margin-bottom: 370px;
+    }
+
+    #tabelaPagamentoConcluido th{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #tabelaPagamentoConcluido td{
+        font-size: 20px;
+    }
+
+    #h3_ErroPagamento{
+        margin-top: 45px;
+    }
+
+    #fieldsetErroPagamento{
+        margin-bottom: 572px !important;
+    }
+}
+       /*PCs*/
+@media screen and (min-width: 992px) {
+    #fieldsetHomePage{
+        /* background-color: pink !important; */
+        margin-top: 30px;
+        /*margin-bottom: 107px;   */
+        margin-bottom: 108px;
+    }
+
+    #tabelaProdutosCadastrados{
+        /*background-color: red !important; */
+        margin-bottom: 76px;
+    }
+
+    #tabelaProdutosCadastrados th{
+        font-size: 22px;
+    }
+
+    #tabelaProdutosCadastrados td{
+        font-size: 20px;
+    }
+
+    #cartao{
+      margin-left: 16px;
+    }
+
+    #tabelaPagamentoConcluido{
+        margin-bottom: 205px;
+    }
+
+    #fieldsetErroPagamento{
+        margin-bottom: 225px !important;
+    }
+}
+
+/*ipad pro*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .footerAutoria{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #fieldsetHomePage{
+        /* background-color: purple !important;  */
+        margin-top: 100px;
+        margin-bottom: 703px;
+    }
+
+    #linkHome{
+        margin-left: 10px;
+    }
+
+    #legendaProdutosCadastrados{
+        margin-top: 15px;
+        margin-bottom: 35px;
+        font-size: 38px;
+        margin-top:57px;
+    }
+    #tabelaProdutosCadastrados{
+        /* background-color: purple !important;  */
+        margin-bottom: 625px;
+    }
+
+    #tabelaProdutosCadastrados th{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #tabelaProdutosCadastrados td{
+        font-size: 26px;
+    }
+
+    #textEscolhaProduto{
+        font-size: 28px;
+    }
+
+    #formPagamento{
+        margin-bottom: 15px;
+    }
+
+    #desconto{
+        width: 70% !important;
+        /*background-color: yellow !important; */
+    }
+
+    #legendaPagamentoConcluido{
+        margin-top: 45px;
+    }
+    #tabelaPagamentoConcluido{
+        margin-bottom: 870px;
+    }
+
+    #tabelaPagamentoConcluido th{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #tabelaPagamentoConcluido td{
+        font-size: 22px;
+    }
+
+    #h3_ErroPagamento{
+        margin-top: 175px !important;
+    }
+
+    #fieldsetErroPagamento{
+        margin-bottom: 770px !important;
+    }
+}
+        /*Smartphones*/
+@media only screen and (min-device-width: 330px) and (max-device-width: 420px){
+    #fieldsetHomePage{
+      margin-top: 30px;
+      margin-bottom: 49px;
+    }
+
+    th{
+        font-weight: bold !important;
+    }
+
+    #legendaProdutosCadastrados{
+      font-size: 24px;
+      margin-top: 41px;
+    }
+
+    #tabelaProdutosCadastrados{
+        /* background-color: yellow !important; */
+        margin-bottom: 135px;
+    }
+
+    #tabelaProdutoAVenda{
+        padding-bottom: 5px;
+    }
+
+    #dinheiro{
+      margin-left: 8px;
+    }
+    #cheque{
+      margin-left: 16px;
+    }
+
+    #tabelaPagamentoConcluido{
+        margin-bottom: 58px;
+    }
+
+    #tabelaPagamentoConcluido th{
+        font-size: 18px;
+        font-weight: bold
+    }
+
+    #tabelaPagamentoConcluido td{
+        font-size: 16px;
+    }
+
+    #h3_ErroPagamento{
+        margin-top: 50px;
+    }
+
+    #fieldsetErroPagamento{
+        margin-bottom: 198px !important;
+    }
+}
