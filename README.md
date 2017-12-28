@@ -1,6 +1,6 @@
 # Projeto_Casa_e_Cafe
 
-1ª Fase:
+1:
     Instruções para rodar o projeto.
 
     Foi feito com NodeJS, Express e Ejs.
@@ -23,7 +23,7 @@
     As dependencias já estão todas neste projeto no arquivo package.json.
     Basta serem instaladas para rodar corretamente.    
 
-2ª Fase:   
+2:   
     Foi utilizado no frontend o framework css Materialize.
     Deixei uma imagem com a raiz do projeto.
     Para forçar o erro e exibir a página de erro que contém o status 404, basta introduzir uma string errada no comando sql da linha 16 do     arquivo model/pagamentoModel.js 
