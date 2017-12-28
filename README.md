@@ -1,5 +1,7 @@
 # Projeto_Casa_e_Cafe
 
+Projeto desenvolvido utilizando no front-end o framework css Materialize e no back-end foi utilizado o NodeJS.
+
 1:
     Instruções para rodar o projeto.
 
@@ -25,5 +27,5 @@
 
 2:   
     Foi utilizado no frontend o framework css Materialize.
-    Deixei uma imagem com a raiz do projeto.
+    Há um arquivo com a imagem da raiz do projeto.
     Para forçar o erro e exibir a página de erro que contém o status 404, basta introduzir uma string errada no comando sql da linha 16 do     arquivo model/pagamentoModel.js 
